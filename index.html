@@ -16,8 +16,9 @@
     .skill{background:#fff;border:1px solid #e6e6e6;padding:1rem;border-radius:6px}
     .skill h4{margin:0 0 .5rem 0}
     .progress{height:8px;background:#eee;border-radius:4px;overflow:hidden}
-    .progress > span{display:block;height:100%;background:#0a74da}
-    footer{padding:1rem 2rem;text-align:center;color:#666;font-size:.9rem}
+    .project{background:#fff;border:1px solid #e6e6e6;padding:1rem;margin-bottom:1rem;border-radius:6px}
+    .project h4{margin-top:0}
+    .project a{color:#0a74da;text-decoration:none;font-weight:bold}
     @media(max-width:600px){header{flex-direction:column;align-items:flex-start}nav{margin-top:.5rem}}
   </style>
 </head>
@@ -28,6 +29,7 @@
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="#resume">Resume</a>
       <a href="resume.html">Download Resume</a>
     </nav>
@@ -91,6 +93,21 @@
             <h4>Python</h4>
             <div class="progress"><span style="width:75%"></span></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h3>Portfolio</h3>
+        <p>Here are some of my data analysis projects showcasing my skills in Python, data cleaning, visualization, and statistical analysis.</p>
+
+        <div class="project">
+          <h4>Telecom Plan Revenue Analysis</h4>
+          <p><strong>Description:</strong> Analyzed Megaline's Surf and Ultimate prepaid plans using 2018 user data to determine which plan generates more revenue. The project involved data cleaning, aggregation, revenue calculation, and hypothesis testing.</p>
+          <p><strong>Technologies:</strong> Python (Pandas, NumPy, Matplotlib, SciPy), Jupyter Notebook</p>
+          <p><strong>Key Insights:</strong> Surf plan generates more total revenue despite Ultimate having higher per-user revenue; user behaviors differ by plan; revenue trends over time.</p>
+          <p><a href="telecom_plan_analysis.html">View Project</a> | <a href="telecom_plan_analysis.ipynb" download>Download Notebook</a></p>
         </div>
       </div>
     </section>
